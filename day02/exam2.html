@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+  <ol> <!-- order list : 메뉴,제품항목 등등 순차적인 아이템 배치--> 
+    <li> <!-- list item-->
+        1일차
+    </li>
+    <li> 2일차 </li>
+  </ol>
+  <ul> <!-- unoder list : ol과 ul 글머리 차이 -->
+<li> 1일차 </li>
+<li> 2일차 </li>
+<li> 3일차 </li>
+  </ul>
+
+  <a href="https://www.naver.com"> 여기 클릭 </a> <br />
+  <a href="exam1.html"> 이전 실습 페이지로 </a> <br />
+  <a href="tel:010-5163-1956"> 전화걸기 (모바일환경) </a> <br />
+
+  
+  <!-- 반드시 암기. 상대(현재위치기준) 경로  VS 절대(고정위치기준) 경로 ( 전체 주소 ) -->
+  <a href=".//exam1.html"> 현위치 ./ , 생략 가능 </a> <br />
+  <a href="../test.html"> 현위치 기준에서 상위폴더 1번(../) 이동 , ../../ (2번) </a> <br />
+
+  <a href="C:\Users\gj005\OneDrive\바탕 화면\so0Front\day02\exam1.html" >로컬환경 절대주소 </a> <br />
+  <a href="http://172.29.109.210:5500/day02/exam1.html"> 서버환경 절대주소</a> <br />
+  <a href="./exam1.html"> 서버환경 상대경로 </a>  <br /> 
+  <a href="../day03/test.html"> 다른 폴더의 html </a>
+
+</body>
+</html>
