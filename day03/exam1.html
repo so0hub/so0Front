@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+</head>
+<body>
+    
+    <!-- 입력상자들을 감싼 폼 양식 : 추후에 백엔드(통신)-->
+    텍스트1 : <input type="text" autofocus maxlength="10" placeholder="입력 전 가이드"/> <br />  
+    <!-- autofocus 자동으로 커서 되는 것 , disabled 사용 금지시키는 거 , maxlength 글자수 제한시키는 거 , placeholder 입력 전 가이드 -->
+    비밀번호 : <input type="password"  /> <br />
+    텍스트2 : <input type="text" value = "김민지" readonly />  <br />            <!-- "김민지" 뒤에 readonly 붙이면 수정금지하게 만드는 거.-->
+    첨부파일(단일) : <input type="file" /> <br />
+    첨부파일(복수) : <input type="file" multiple /> <br />
+    숫자 :  <input type="number" /> <br />
+    날짜 : <input type="date" /> <br />
+    날짜/시간 : <input type="datetime-local" /> <br />  <!-- local 넣으면 서울 시간에 맞춰서 해줌-->
+    월 : <input type="month" /> 주 : <input type="week" /> <br />
+    
+    스크롤 : <input type="range" />  <br />
+    
+    체크박스(복수) : 뉴스 <input type="checkbox" /> 광고 <input type="checkbox" /> <br />  <!-- 체크박스는 네임이 동일해도 복수-->
+    체크박스(단일) : 뉴스 <input type="radio" name="가입경로" />     광고 <input type="radio" name="가입경로" />   <br />
+    <!-- 라디오는 네임 동일하면 단일로 됨. 라디오는 단일로 쓰임 일반적으로-->
+    
+    폼전송 : <input type="submit" value="로그인" /> 
+    폼 초기화 : <input type="reset" value="다시쓰기"/> 
+    
+    일반버튼 : <button type="button"> 회원가입 </button> <br />   <!-- 타입에 button 꼭 잊지 말고 쓰기-- / 이거 자주 씀-->
+    
+    긴 텍스트 : <textarea COLS="50" rows="5"></textarea>   <!--가로 50줄 세로 5줄 설정도 할 수 있음--> 
+     <!--textarea 쓸 때 웬만하면 꺽새사이에 띄어쓰기 안 쓰는 게 좋음--> <br />
+  
+    목록상자 : <select>
+            <option> 네이버 </option>
+            <option> 카카오 </option>
+            </select>
+
+    
+
+
+
+</body>
+</html>
