@@ -10,53 +10,75 @@
 </head>
 
 <body>
-    <!--버튼 인풋박스 버튼 나머진 다 td인데 기능없어도 ㅇㅋ-->
+   <button tye="button"><</button> <input type="month" /> <button type="button">></button> <br />
+ 
 
-    <button type="button"> < </button> <input type="month" /> <button type="button">></button> <br />
-            <!--달력-->
-            <table border="1" <tr>
+<table border="1"> <!--표에 테두리가 생기는 것. 숫자가 커질 수록 바깥 쪽 테두리가 두꺼워짐-->
 
-
-                <th colspan="9">2023년 1월</th>
-
-
-                </tr>
-
-                <!---->
+<tr> <!-- tr:행(row) , th:제목 셀(header,글자가 굵게 나옴), td:일반 데이터 셀(data) -->
+    <th colspan="9">2023년 1월</th> 
+    <!-- colspan:가로 방향(열)로 칸을 합칠 때. 셀 병합 기능,<td>나 <th> 안에 넣으면 됨-->
+</tr>
 
 
+<tr>
+    <th>일</th> <!-- 원래 셀은 <td>쓰는 거 맞는데 나는 요일을 굵게 쓰고 싶음 이럴 땐 그냥 <th>를 쓰면 바로 됨-->
+    <th>월</th>
+    <th>화</th>
+    <th>수</th>
+    <th>목</th>
+    <th>금</th>
+    <th>토</th>
+</tr>
 
-                <tr>
-                    <td colspan="2"></td>
-                    <td>일</td>
-                    <td>월</td>
-                    <td>화</td>
-                    <td>수</td>
-                    <td>목</td>
-                    <td>금</td>
-                    <td>토</td>
-                </tr>
+<tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+</tr>
 
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>7</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>10</td>
-                    <td>11</td>
-                    <td>12</td>
-                    <td>13</td>
-                    <td>14</td>
+<tr>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+</tr>
 
-                </tr>
+<tr>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+    <td>21</td>
+</tr>
 
+<tr>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td>28</td>
+</tr>
 
-            </table>
+<tr>
+    <td>29</td>
+    <td>30</td>
+    <td>31</td>
+</tr>
+
+</table>
+
 
 </body>
 
