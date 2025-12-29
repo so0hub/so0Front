@@ -1,0 +1,38 @@
+
+.title{
+    font-family: 'Thinrounded';
+    color: aquamarine; 
+    font-size: 40px ; /* 글꼴 크기 */
+    font-weight: bold; /* 글꼴 진하기 */
+    font-style: italic; /* 글꼴 기울기 */
+}
+@font-face {
+    font-family: 'ThinRounded';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/ThinDungGeunMo.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+.content {
+    font-family: 'ThinRounded';
+    color:lightseagreen; /* 글꼴 색상 */
+    word-spacing: 5px; /* 단어간격 : 어간 */
+    letter-spacing: 3px; /* 글자간격 : 자간 */
+    line-height: 160%; /* 줄 간격 : % 백분율 150~160 사이로 자주 쓰임 */
+}
+
+.writer{
+    text-align: right; 
+    /* 마크업 안에 있는 content (내용물) 가로 정렬 */
+    /* p 태그를 정렬하는 게 아니라 그 안에 "위키백과"를 정렬하는 것임 */
+    text-decoration: underline overline line-through; 
+    /* 선 긋기 : underline:밑줄 , overline:윗줄 , line-through:취소선  */
+    text-shadow: 10px 5px 2px gray; 
+    /* 텍스트 그림자 : x축(+양수 right -음수 left) y축(+ bottom -top )  */
+    color: greenyellow; /* 방법 1 : */
+    color: rgb(140, 200, 100); /* 방법2 : */ 
+    color: #000000 /* 방법3 : 헥스코드( 6자릿수로 16진코드 )
+}
+
+/* 외부폰트 : 1.영문:구글폰트 2.한글:눈누폰트 */
+

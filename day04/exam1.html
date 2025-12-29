@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+
+    <style>
+        /* CSS 주석 */
+        /* 선택자(누구를/대상) { 속성명(무엇을) : 값(어떻게) } */
+        /* 주의할 점 : 속성 1개 당 ; 세미콜론 마침 */
+        h4{ color : blue; }
+        </style>
+
+        <link rel="stylesheet" href="exam1.css"/> <!-- CSS 파일 불러오기 -->   <!--이거 젤 자주 쓴다-->
+        <!-- 링크는 혼자 열고 닫음 -->
+</head>
+
+<body>
+    <h3 style="color: red;"> css 적용 방법1 </h3>  
+<!-- 칼라라는 속성에 레드-->
+    <h4> css 적용 방법2 </h4>
+    <h5> css 적용 방법3 </h5>   <!-- 3번이 제ㅔㅔㅔㅔㅔ일 자주 사용됨 -->
+
+    <p> 김민지 </p>
+    <h6> 강해린 </h6>
+    <p class="뉴진스"> 모지혜 </p> <!--p태그의 소속을 써달라-->
+    <p id="주민등록번호"> 이혜인 </p>
+
+    <div> <!-- 부모 : body 자식 : h3 -->
+        <h3> 고객명단 </h3> <!-- 부모 : div 자식 : 없음 -->
+        <ol>   <!-- 부모 : div 자식 : li -->
+            <li> <!-- 부모 : ol 자식 : h4 -->
+                <h4> 팜하니 </h4> 
+            </li> 
+            <li> 박진감 </li>
+        </ol>
+    </div>
+
+
+</body>
+</html>
