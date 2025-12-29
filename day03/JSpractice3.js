@@ -99,7 +99,7 @@ BMI 지수 공식: 몸무게(kg) / (키(m) * 키(m))
 
 //let newtodo = prompt("새로운 할 일을 작성하세요.")
 //let todolist = ['장보기','과제하기'];
-//todolist.push(newtodo);
+//todolist.push(newtodo); // 변수명.push(새로운 값); : <자료추가> , 변수명 = 새로운값 <수정>
 //console.log(todolist);
 
 //---------------------------------------------------------------------------------------------------
@@ -108,5 +108,9 @@ BMI 지수 공식: 몸무게(kg) / (키(m) * 키(m))
 //초기 배열: let waitingList = ['김민준', '이서연', '박도윤', '최지우'];
 //힌트: 배열의 마지막 요소 인덱스는 배열.length - 1 입니다.
 
-//let waitingList = ['김민준', '이서연', '박도윤', '최지우'];
-//console.log(waitingList[3]);
+let waitingList = ['김민준', '이서연', '박도윤', '최지우'];
+let 마지막인덱스 = waitingList.length - 1;
+console.log( `결과 10 : 마지막 대기자는 ${waitingList[마지막인덱스]}`);
+
+
+// 배열의 길이는 1부터 , 배열의 인덱스는 0부터 , 배열명.length : 총길이 , 배열명.length-1 : 마지막인덱스
