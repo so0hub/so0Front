@@ -1,54 +1,99 @@
-.title{
-    font-family: '맑은고딕';
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
+@font-face {
+    font-family: 'YeogiOttaeJalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GMarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
 }
 
+.title{
+    font-family: 'YeogiOttaeJalnan';
+    color: rgb(167, 114, 16);
+    font-size: 30px;
+    text-align: left;
+}
 
 .content {
-    font-family: '맑은고딕';
-    color:black;
-    font-weight: normal;
+    font-family: 'GMarketSans';
+    color: rgb(167, 114, 16);
     word-spacing: 1px;
     letter-spacing: 3px;
     line-height: 150%;
-
 }
 
 .title2{
-    font-family: '맑은고딕';
-    color:black;
+    font-family: 'YeogiOttaeJalnan';
+    color: rgb(167, 114, 16);
     font-size: 27px;
     font-weight: bold;
 }
 
 .writer{
-    font-family: '맑은고딕';
-    color:black;
+    font-family: 'GMarketSans';
+    color: rgb(167, 114, 16);
     font-size: 20px;
     font-weight: bold;
 }
 
 .writer2{
-    font-family: '맑은고딕';
+    font-family: 'GMarketSans';
     color:black;
     font-size: 20px;
-    font-weight: bold;
+}
+
+.cheak{
+    color: rgb(167, 114, 16);
+    text-align: center;
 }
 
 .writer3{
-    font-family: '맑은고딕';
+    font-family: 'GMarketSans';
     color:black;
     font-size: 20px;
-    font-weight: bold;
 }
 
 .writer4{
-    font-family: '맑은고딕';
-    color:black;
+    font-family: 'GMarketSans';
+    color: rgb(167, 114, 16);
     font-size: 20px;
-    font-weight: bold;
+    text-align: left;
 }
 
+.good{
+    font-family: 'GMarketSans';
+    color:rgb(167, 114, 16);
+    text-align: center;
+}
+.subtitle{
+    font-family: 'GMarketSans';
+    color: rgb(167, 114, 16);
+}
+
+.center{
+    text-align: center;
+    color: rgb(167, 114, 16);
     
+}
+
+.option{
+    text-align: left;
+    font-family: 'GMarketSans';
+    color: rgb(167, 114, 16);
+}
+
+.qna{
+    font-family: 'YeogiOttaeJalnan';
+    color: rgb(167, 114, 16);
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.button{
+    font-family: 'GMarketSans';
+    color: rgb(167, 114, 16);
+}
