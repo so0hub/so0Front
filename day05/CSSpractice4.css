@@ -1,0 +1,57 @@
+
+.로그인구역{
+    border-top: solid 1px whitesmoke;
+    border-bottom: solid 1px whitesmoke;
+    border-left: solid 1px whitesmoke;
+    border-right: solid 1px whitesmoke;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 3px 10px #ffcdd7;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    
+}
+
+.제목{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.입력구역{text-align: center;
+    
+}
+
+.아이디입력{
+    border-radius: 13px 13px 13px 13px;
+    padding: 9px;
+}
+
+.비밀번호입력{
+    border-radius: 13px 13px 13px 13px;
+    padding: 9px;
+    margin-top: 15px;
+}
+
+.로그인버튼{
+    border-radius: 10px 10px 10px 10px;
+    padding:9px;
+    margin-top: 15px;
+    width: 70px;
+    height: 40px;
+    background-color: blue;
+    color:white;
+    
+}
+
+.서브제목{
+    font-family: " 굴림 ";
+    font-weight: 400;
+}
+
+
+.회원가입{
+     color: blue;
+     text-decoration: none;}
