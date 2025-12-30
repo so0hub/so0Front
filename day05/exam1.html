@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+ <link rel="stylesheet" href="exam1.css"/>    
+</head>
+<body> 
+    body 구역
+    <div class="경기도">
+        경기도 <!-- 부모 : body 자식 : -->
+        <div class="안양시">
+            안양시 <!-- 부모 : div 자식 : -->
+            <div class="만안구"> 
+                박진감(만안구)
+            </div>
+        </div>
+        <div class="안산시">
+            안산시
+            <div class="상록구">
+                <div class="사진구역"> <!-- 사진을 div로 한 번 더 감싸주면 사진을 이동 가능 -->
+                    <img class="사진" src="../day05/농담곰.jpg"/>
+                </div>
+                <div class="입력구역">
+                    <input class="입력상자"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

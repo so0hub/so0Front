@@ -1,0 +1,38 @@
+/* 밑에꺼 작업용으로 쓰고 지우면 편함 */
+*{
+    border: solid 1px mediumspringgreen;
+    margin: 10px;
+}
+
+.s1{
+    display: inline; /* 표기 방법.   inline:기본값 */ 
+    width: 100px; height: 100px; /* 사이즈 불가능 */
+    /* (왼/오른) 안쪽 바깥 여백만 가능 */
+    margin: 10px; padding: 20px;
+}
+
+.s2{
+    display: block; 
+    /* block은 span도 div 처럼 사용 가능하게 만들어줌 */
+    width: 100px; height: 100px;
+    /* block은 크기조정 가능하게 만들어줌 */
+    margin: 20px; padding: 20px;
+    /* 안쪽여백 바깥여백도 가능 */
+}
+
+/* 같은줄에서 특정부분만 꾸밀 땐 inline을 써야 돼 */
+/*디스플레이를 인라인으로 하면 한줄에포함 , 블록을하면한줄을차지한다 */
+
+
+.s3{
+    display: inline-block;
+    /* 같은 줄에 있으면서 크기 조정이 가능 */
+    width: 100px; height: 100px;
+    /* 여백 가능 */
+    margin: 50px; padding: 50px;
+}
+
+.s4{
+    display: none;
+    
+}

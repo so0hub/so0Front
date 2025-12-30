@@ -1,0 +1,48 @@
+/*
+*{
+    border: 1px solid aqua;
+}
+    만들 때 내가 보는 용*/
+/* 1. 이미지 */
+.사진구역>img {
+    width: 250px;
+    /* 가로사이즈 */
+    margin-bottom: 30px;
+}
+
+/* 2. 제목 */
+.제목 {
+    font-weight: bold;
+    /* 글꼴 진하게 */
+}
+
+.오렌지색상 {
+    color: orange;
+}
+
+.제목강조 {
+    display: inline;
+    /* 한 줄에 표시 */
+    font-size: 30px;
+    /* 글꼴 크기 */
+    margin-right: 5px;
+    /* 오른쪽 바깥 여백 */
+}
+
+/* 3. 내용 */
+.내용 {
+    width: 400px;
+    background-color: #0f6878;
+    /* 배경색 */
+    color: white;
+    padding: 25px 20px;
+    /* 안쪽여백 위/아래=25 왼/오=20*/
+    margin: 20px 0px;
+    /* 바깥여백 */
+}
+
+.내용>p {
+    /* span과 div 제외한 마크업들은 기본 CSS 제거 */
+    margin: 0px;
+    padding: 0px;
+}
