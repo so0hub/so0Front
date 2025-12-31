@@ -1,0 +1,67 @@
+.box{
+    border: 1px solid red;
+    width: 100px; padding: 10px;
+}
+
+.flexbox1{
+    display: flex;   /* 하위 요소에 대해 한꺼번에 가로 배치가 됨 */
+    border: 1px solid blue; /* 각 자식들이 100px * 3 = 300개 */
+    width: 250px; 
+    flex-wrap: nowrap; /* 기본값 : 하위 요소가 넘치면 자동으로 하위 요소들 크기 조정 */
+    
+}
+
+.flexbox2{
+    border: 1px solid blue;
+    width: 250px;
+    /* wrap : 하위 요소가 넘치면 자동 줄바꿈 */
+    display: flex; flex-wrap: wrap;
+}
+
+.flexbox3{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row ; /* row(기본값) 쓰면 하위 요소 가로 배치가 됨 , 세로 :column */
+}
+
+.flexbox4{
+    border: 1px solid blue;
+    display: flex; flex-direction: column;
+}
+
+.flexbox5{
+    border: 1px solid blue;
+    display: flex; 
+    /* 코드 자동 완성 : ctrl + 스페이스바 */
+    justify-content: flex-start; 
+}
+
+.flexbox6{
+    border: 1px solid blue;
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+.flexbox7{
+    border: 1px solid blue;
+    display: flex; 
+    justify-content: center; 
+}
+
+.flexbox8{
+    border: 1px solid blue;
+    display: flex; 
+    justify-content:space-between; /* 양 끝에 여백 없이 사이 (자동)여백 균등 가로 정렬 */
+}
+
+.flexbox9{
+    border: 1px solid blue;
+    display: flex; 
+    justify-content:space-around;  /* 사이 여백의 50%를 양끝 여백으로 자동 균등 가로 정렬*/
+}
+
+.flexbox10{
+    border: 1px solid blue;
+    display: flex; 
+    justify-content:space-evenly; / 양끝 여백과 사이 여백을 자동 균등 가로 정렬 */
+}
