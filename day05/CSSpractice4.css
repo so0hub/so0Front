@@ -1,3 +1,11 @@
+/* 작업용 (완성 후 제거 예정) box 모델 시각용 */
+/*
+*{
+    border: 1px solid red;
+    padding: 20px;
+}
+    */
+
 
 .로그인구역{
     border-top: solid 1px whitesmoke;
@@ -27,12 +35,15 @@
 .아이디입력{
     border-radius: 13px 13px 13px 13px;
     padding: 9px;
+    border: solid 1px rgb( 184, 184, 184 );
+
 }
 
 .비밀번호입력{
     border-radius: 13px 13px 13px 13px;
     padding: 9px;
     margin-top: 15px;
+    border: solid 1px rgb( 184, 184, 184 );
 }
 
 .로그인버튼{
@@ -43,6 +54,7 @@
     height: 40px;
     background-color: blue;
     color:white;
+    border: solid 1px rgb( 184, 184, 184 );
     
 }
 
