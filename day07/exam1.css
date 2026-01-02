@@ -1,0 +1,37 @@
+*{
+    border: 1px solid red;
+    padding: 10px;
+}
+
+
+/* 복수선택자 : 선택자 A , 선택자 B .... (쉼표 넣으면 됨) */
+#header, #main , #footer{
+    width: 1280px; /* pc 기준 : 1000 ~ 1400px 자주 씀 */
+    margin: 0 auto;
+}
+
+/* 하위 요소들을 배치 방법 : flex */
+#main{
+    display: flex;
+    flex-direction: row; /* 가로배치 (기본값) */
+    flex-wrap: nowrap; /* 줄바꿈처리 안 함 ( 기본값) */
+    justify-content: space-between; /* 가로 정렬 */
+}
+
+#content{ /* 높이는 내용물 만큼 자동크기 100% */
+    width: 830px; /* 크기 : px(픽셀/고정) , %(비율/반응형) */
+
+}
+
+#sidebar{
+    width: 420px;
+}
+
+#pooter{
+    background-color: black; color: white;
+    /* 회색이나 블랙 자주 씀 */
+}
+
+
+
+/* 이거 다시 하기 */

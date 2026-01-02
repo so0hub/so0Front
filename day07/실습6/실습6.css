@@ -1,0 +1,106 @@
+/* 공통 CSS 이면서 관례적인 기본 CSS */
+*{
+    box-sizing: content-box; /* content+padding+border */
+    font-family: 굴림 나눔고딕; /* 일반적으로 많이 씀 */
+    font-size: 12px; /* 10~12px 가 기본적 */
+    padding: 0px; margin: 0px; /* 전체 여백 제거 */
+}
+
+a{ /* a마크업 기본 CSS 제거 */
+    text-decoration: none; /* 밑줄제거 */
+    color:black; /* 색상 */
+}
+li{ /* 목록 글머리 제거 */
+    list-style-type: none;
+}
+
+
+/* ====================[1] 헤더 : HTML -> CSS  ==================== */
+/* div , li 등 : block 이라서 한 줄에 하나씩 표시 */
+#header{
+    display: flex; /* 직계 하위 요소 해당 */
+    justify-content: space-between;
+    align-items: center; /* flex 요소들의 세로 정렬 */
+    width: 1280px; margin: 0 auto;
+}
+
+#header .top-menu{ /* class는 #이고 id는 . 찍어야 함 */
+                   /* 선택자 A 선택자 B : 자손선택자 */
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0px;
+} 
+
+#header .top-menu li{
+    margin-left: 5px;
+
+}
+
+#header .main-menu{ /* 선택자 A 선택자 B : 자손선택자 */
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    margin: 20px 0px; 
+}
+
+#header .main-menu li{
+    margin-left: 30px;  /* 왼쪽 바깥 여백 */
+    font-size: 25px; font-weight: bold;
+}
+
+/* ====================[2] 대표 이미지  ==================== */
+#main-img > img{ /* .이 클래스 >는 자식 */
+    width: 100%; /* 전체 사이즈 */
+}
+
+/* ====================[3] 본문  ==================== */
+
+#main{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px; margin: 20px auto;
+}
+
+/* 3-1 사이드바 */
+#sidebar{width: 220px;}
+#sidebar > h3{
+    background-color: gray; color: white;
+    padding:10px; /* 안쪽 여백 */
+    font-size: 20px;
+}
+
+#sidebar > ol > li {
+        padding: 10px;
+        border-bottom: 1px solid #eeeeee; /* 아래쪽 테두리 */
+}
+
+/* 3-2 내용물 */
+#content{
+    width: 1030px;}
+
+#content >h3{   
+    font-size: 20px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#content > img{
+    /* [1] 이미지 감싼 구역 생성 [2] display:block 변경 */
+    margin: 0 auto;
+    display: block;
+}
+/* ====================[4] 푸터  ==================== */
+
+
+#footer{
+    background-color: #2c2a29;
+    color: white;
+    padding: 15px 0px; /* 여백 : 위아래 15, 왼쪽오른쪽 0이라는 뜻 */
+}
+
+#footer-inner{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px; margin: 0 auto;
+}
