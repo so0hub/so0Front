@@ -64,7 +64,7 @@ for (let i = 1 ; i <= 5 ; i++ ){
 } // break END
 
 // (3) 무한루프 : 종료가 없는 계속되는 반복문
-// 방법 1 : for( ; ; ){console.log(1);}
-// 방법 2 : while( true ){ console.log(1);}
+// 방법 1 : for( ; ; ){ }
+// 방법 2 : while( true ){ }
 // 활용1 : for( ; ; ){let a = prompt("무한입력 : ");}
 // 활용2 : for( ; ; ){let b = prompt("무한입력 : "); if( b == "x")break; }
