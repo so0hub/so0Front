@@ -106,13 +106,12 @@ li{
     margin-right: 15px;   
 }
 
-#center-text{
+#center-text > li{
+    display: flex;
     flex-direction: row;
 }
 
-#right-main{
-    flex-direction: ;
-}
+
 
 
 
