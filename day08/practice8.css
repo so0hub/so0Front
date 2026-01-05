@@ -1,0 +1,140 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+/*************************** 1.헤더 ***************************/
+#header {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .menu>ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#header .menu-li > li{
+    margin-right: 25px;
+}
+
+#header .logo > img{
+    width: 200px;
+}
+
+/*************************** 2.메인이미지 ***************************/
+
+#main-img > img{
+    width: 100%;  /* %인 걸 자꾸 까먹네 */
+    margin-top: 20px;
+}
+
+/*************************** 3.본문 ***************************/
+
+#main {
+    width: 1280px; margin: 20px auto; /* 가운데로 */
+    display: flex;
+    flex-direction: column;
+}
+
+#main .content1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+#main .content1 .content1left{ /* 예약 안내 박스 전체를 가로로 배치 */
+    display: flex; /* 나를 정렬해줘가 아닌 내 자식들을 정렬해줄게 라는 선언이다. 헷갈 ㄴㄴ */
+    align-items: center;
+    margin-right: 50px;
+    
+}
+
+#main .content1 .content1right{
+    display: flex;
+    align-items: center;
+}
+
+.content2{
+    display: flex;
+    justify-content: center;
+}
+
+.content2 > .box-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+}
+
+
+
+.content2 > .box-list > .box > li > img{ 
+    width: 275px;
+    margin-right: 45px;
+
+   
+}
+
+.content2{
+    background-color: #eeeeee;
+    padding-top: 5%; padding-bottom: 5%;
+    
+}
+
+/* 푸터 할 거임 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#footer{
+    background-color: #292c32;
+    color: white;
+    margin-top: 50px;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+#footer > .footer-inner{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#footer > .footer-inner > .left-footer , .center-footer{
+    margin-right: 200px;
+}
+
+
+
+#footer > .footer-inner > .center-footer > .center-top-footer{
+    display: flex;
+
+    
+   
+}
+.center-footer > .center-top-footer > li{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+#footer > .footer-inner > .right-footer > ol{
+    display: flex;
+    flex-direction: row;
+}
+
+#footer > .footer-inner > .right-footer > ol > li{
+    margin-right: 10px;
+}
+
+
+.bottom > .content2 , footer{
+    display: flex;
+    flex-direction: column;
+}
