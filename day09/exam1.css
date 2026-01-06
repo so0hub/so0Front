@@ -1,0 +1,69 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: whitesmoke;
+    border: 1px solid red;
+}
+
+.box2 {
+    /* static : HTML 작성 순서대로 배치  */
+    position: static;
+    /* 포지션 기본값(생략 가능)*/
+    left: 50px;
+    /* 위치 이동 불가능하다. */
+    background-color: aquamarine;
+}
+
+.box3 {
+    /* relative : 본래 위치로부터 상대 위치, 위치 변경 가능 */
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: lightskyblue;
+}
+
+.box4 {
+    /* absolute : 가장 가까운 상위요소의 position 기준 절대위치  */
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    background-color: azure;
+}
+
+.box5 {
+    /* fixed : 드바이스(크롬) 화면 위치 고정 */
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: aqua;
+}
+
+
+.parent {
+    position: relative;
+    border: 2px solid blue;
+}
+
+.box6 {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    background-color: mediumturquoise;
+}
+
+/* -------------------------sticky----------------------- */
+.header{
+    display: flex;
+    background-color: beige;
+    /* sticky : 만약 화면에서 벗어나면 위치 고정 */
+    position: sticky;
+    top : 0px; /*화면을 벗어나면 탑에다 붙이라는 뜻 쇼핑몰 보면 위에 상단바 계속 고정돼서 따라오는 거 그거임 */
+    z-index: 5; /* z-index : 겹침 우선순위 하위 5로 하면 우선순위를 5등?으로 한다. 상단바 뒤에 아이템이 가려져 */
+    opacity: 50%; /* opacity : 투명도 */
+}
+
+.header > ul{
+    display: flex;
+}
+
+/* ------------------------------------------------------ */

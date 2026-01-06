@@ -1,0 +1,51 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 밑줄제거 */
+
+/* [1] 선택자 :hover 만일 해당 요소에 마우스를 올렸을 때           !이거 자주 씀 겁나 */
+a:hover {
+    color: red;
+    font-size: 20px;
+}
+
+/* [2] 선택자 :visited 만일 브라우저(크롬)내 방문한 적이 있는 링크일 떄 */
+a:visited {
+    color: blue;
+    font-size: 10px;
+}
+
+/* [3] 선택자 : active  만일 해당 요소를  클릭했을 떄(그 순간에) */
+a:active {
+    color: yellow;
+    font-size: 30px;
+}
+
+/* [4] 선택자 ::before/after  HTML에는 존재하지 않지만 가상(가짜)의 요소(content) 추가 */
+.box1::before {
+    content: "[가상요소 before 구역]";
+    color: aqua;
+}
+
+.box1::after {
+    content: "[가상요소 after 구역]";
+    color: plum;
+}
+
+/* [활용1] 글머리1 */
+li {
+    list-style-type: none;
+}
+
+.box2>li::before { content: "💩"; color: palevioletred;}
+
+/* [활용2] 글머리2 */
+.box2 > li::after{ content:url(/day09/농담곰운다.png);}
+
+
+/* [5] :nth-of-type( 순서번호 )   하위 요소들이 여러 개일 때 선택하기 */
+.box2 > li:nth-of-type(1){
+    color: red;
+}

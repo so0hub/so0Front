@@ -1,0 +1,47 @@
+.parent{
+    background-color: red;
+    width : 700px; height: 450px;
+    margin: 0 auto;
+    position: relative; /* 하위 요소의 absolute 속성값의 위치기준점이 됨 
+    바디 말고 빨간색 박스를 기준으로 삼아서 박스들을 만들자는 뜻 */
+}
+
+.box{
+    background-color: yellow;
+    width: 100px; height: 70px;
+    border-radius: 10px;
+    position: absolute; /* absolute는 자리 차지를 하지 않음. 그래서 다 겹치게 됨.*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    left: 300px; /* 700의 가운데는 350 정도 됨,. 노란색은 100임 그럼 가운데로 두려면 300 정도로 추정 */
+    top: 50px; /* 왼쪽으로부터 350에 상단으로부터 50*/
+}
+
+.box2{
+    left: 150px;
+    top: 120px; /* 50+70 */
+}
+
+.box3{
+    left: 450px;
+    top: 120px;
+}
+
+.box4{
+    left: 150px;
+    top: 250px;
+}
+
+.box5{
+    left: 450px;
+    top: 250px;
+}
+
+.box6{
+    left: 300px;
+    top: 330px;
+}

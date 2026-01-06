@@ -1,0 +1,47 @@
+li {
+    list-style: none;
+}
+
+#header {
+    background-color: beige;
+}
+
+#header>ul {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    padding: 10px 20px;
+    position: relative;
+    /* 하위 요소의 위치 기준점 */
+}
+
+.submenu {
+    position: absolute; /* 상위 요소 기준으로 위치 */
+    top: 40px; left: 8px;
+    padding: 5px;
+    background-color: beige;
+    display: none; /* 안 보이게 */
+}
+
+#header2{background-color: skyblue;}
+#header2 > ul{
+    display: flex;
+    justify-content: center;
+    position: relative; /* 하위 요소의 위치 기준점 */
+}
+
+#header2 > ul > li{padding: 10px;}
+
+.submenu2{
+    position: absolute; /* 가장 가까운 부모가 position 기준 */
+    background-color: skyblue;
+    top: 40px;
+    width: 100%;
+    display: none;
+}
+
+#header2 > ul:hover .submenu2{display: block;}
+
+*{padding: 0px; margin: 0px;}
