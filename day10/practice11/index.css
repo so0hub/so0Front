@@ -90,16 +90,32 @@ a{
 }
 
 .toggle{
-    position: fixed;
+    position: fixed; /* 디바이스 고정위치 */
     right: 0px; top: 30%; /* px가 아니라 %야 님아 */
-}
-
-.toggle > li{
-    position: relative;
-    padding: 14px;
-    border: 1px solid #dbdbdb;
     background-color: #f7f7f7;
 }
+
+.toggle img{
+    width: 20px;
+}
+.toggle ul > li{
+    position: relative; /* 내가 기준이 되겠다. 기준점이 나다. */
+    padding: 14px;
+    border: 1px solid #dbdbdb;
+    
+}
+
+.toggle > ul > li > span{
+    position: absolute; /* li의 자식이 되겠다고  부모를 기준으로 움직인다. */
+    display: none; border-radius: 5px;
+    text-align: center;
+     border: 1px solid black; background-color: black; color: white;
+     width: 80px; height: 20px;
+     right: 40px;
+}
+
+.toggle ul > li:hover .popupsub{display: inline;}
+
 
 /***************************************************************/
 
@@ -122,19 +138,32 @@ a{
 
 /*******************************/
 
+
+#main2-content > .product-list > .product{
+    width: 350px; 
+    margin: 30px 10px;
+    
+}     /* 한 줄에 상품 4개씩만 들어가게 하는 거... 이걸 못 했다.*/
+
+
 #main2 > #main2-content > .product-list{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
+    flex-wrap: wrap; /* 4개가 넘어가면 다음 줄로 */
+    width: 1520px;}
 
 
-#main2-content > .product-list > .product{
-    width: 330px;
-    margin: 30px 0px;
-}     /* 한 줄에 상품 4개씩만 들어가게 하는 거... 이걸 못 했다.*/
 
-#main2-content > .product-list > .product > li > img .img2{
+
+#main2-content > .product-list > .product > li > img{
+    width: 100%;
+    display: block; /* 이미지 아래 미세한 여백 제거해서 이미지가 박스에 꽉 차게 함.. */
+} 
+
+#main2-content > .product-list > .product > li > .img2{
     width: 100%;
 } 
 
+
+
+==================================================================
