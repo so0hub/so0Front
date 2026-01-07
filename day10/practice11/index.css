@@ -23,7 +23,64 @@ a{
 
 #menu2{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
 }
 
-#menu2 {}
+#menu2 > .menu2list{ display: flex; width: 80%; }
+
+#menu2 > .menu2list > li{
+    height: 80px; width: 80px;
+    display: flex; align-items: center; justify-content: center;
+}
+
+#search{
+    border-bottom: 1px solid black;
+}
+
+#search > input{
+    border: none;
+    padding: 5px;
+    width: 130px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#search > img{width: 15px;}
+:focus{ outline: none;} /* 커서(포커스) 활성화 됐을 때 테두리 제거 */
+
+#menu2 .new{color: red;}
+#menu2 .logo{width: 155px;}
+
+
+/*==========================*/
+
+#menu2 > ul > li{position: relative;}
+#menu2 .sub-menu{
+    position: absolute; top: 80px;
+    background-color: white;
+    width: 130%; /* 부모(본메뉴li)의 사이즈보다 1.3배 */
+    text-align: center;
+    display: none; /* 서브메뉴 숨기기 */
+}
+
+#menu2 .sub-menu> li{ margin: 10px;} /* li에 호버했을 때 서브메뉴 보이게*/
+
+#menu2 > ul > li:hover .sub-menu{ display: block;}
+#menu2 > .menu2list{
+    padding: 0 40px; /* 나 이거 헷갈려했네 패딩 0 40 이라 넣어야 로고사진이랑 안 겹쳐짐 */
+}
+
+/*===================================================================*/
+
+#menu2{
+    background-color: rgba(255, 255, 255, 0.8); /* 투명도 : 80% */
+    position: sticky; /* 스크롤 내릴 때 위치 고정하기 */
+    top: 0px; /* 최상단 */
+
+    /* sticky 사용 조건
+    1. sticky : 상위 부모의 높이 사이즈 안에서 고정
+    vs fixed : 특정 요소와 상관없이 디바이스 고정
+    2. top,right,left.bottom 위치 속성 1개 이상 필수 
+    3. 부모 요소가 overflow 속성 사용 금지 */
+}
