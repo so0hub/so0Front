@@ -1,0 +1,65 @@
+/* 이거 공통 기본값으로 넣고 시작*/
+li { list-style-type: none; }
+
+a { text-decoration: none; color: blue;}
+
+/* 모든 여백 초기화! 이거 진짜 중요한데 영원히 까먹음 */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*호버할 때 부모에다가 호버를 하기.*/
+
+
+/* [1] 오른쪽 하단에 토글 전체 이동 */
+.toggle-wrap {
+    position: fixed;
+    /* 화면 크기에 상관없이 위치 고정하는 것 */
+    bottom: 10px;
+    /* 아래에서 위로 10 이동 */
+    right: 10px;
+    /* 오른쪽에서 왼쪽으로 10 이동 */
+}
+
+/* [2] 메인 버튼 구성 */
+.toggle-main {
+    width: 50px; /* 원형 만들기 : 정사각형 크기의 둥근 모서리 */
+    height: 50px;
+    border-radius: 50%;
+    
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 155%; /* 줄 간격 이용한 한 줄 짜리 텍스트 세로 위치 세부적으로 설정 가능 이걸로 + 위치 움직일 수 있음 */
+}
+
+/* [3] 서브 메뉴 버튼 구성 */
+.toggle-sub {
+    position: absolute; /* 자리 차지 X라서 눈에서 서브 메뉴들이 사라짐 */
+    bottom: 45px; /* 서브메뉴 위치 설정 */
+    right: 5px;
+    padding-bottom: 8px; 
+    display: none;  /* 서브메뉴 숨기기 */
+}
+
+.toggle-sub>li {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: skyblue;
+    font-size: 10px;
+    margin-bottom: 10px;    /* 동그라미 간의 간격 띄우기 */
+    display: flex; justify-content: center; align-items: center;
+    padding: 20px;
+}
+
+.toggle-sub > li > a{
+    color: blue; font-weight: bold;
+}
+/* [4] 메인 버튼을 호버 했을 때 서브메뉴 열기 */
+.toggle-wrap:hover .toggle-sub { /* 호버했을 때 다시 서브메뉴 나오게 하는 거 */
+    display: block;
+}
