@@ -37,7 +37,11 @@ a{
 
 #search{
     border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
 }
+
+#search > .searchimg > img{width: 15px;}
 
 #search > input{
     border: none;
@@ -46,7 +50,7 @@ a{
     background-color: rgba(255, 255, 255, 0);
 }
 
-#search > img{width: 15px;}
+
 :focus{ outline: none;} /* 커서(포커스) 활성화 됐을 때 테두리 제거 */
 
 #menu2 .new{color: red;}
@@ -84,3 +88,53 @@ a{
     2. top,right,left.bottom 위치 속성 1개 이상 필수 
     3. 부모 요소가 overflow 속성 사용 금지 */
 }
+
+.toggle{
+    position: fixed;
+    right: 0px; top: 30%; /* px가 아니라 %야 님아 */
+}
+
+.toggle > li{
+    position: relative;
+    padding: 14px;
+    border: 1px solid #dbdbdb;
+    background-color: #f7f7f7;
+}
+
+/***************************************************************/
+
+#main > .maincontent > img{
+    width: 100%;}        /*********** 제발 이미지 그 자체에 넣기. */
+
+#main2-header > .hotitem{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+#main2-header > .text{
+    text-align: center;
+    color: gray;
+    font-size: 8px;
+    margin-bottom: 45px;
+}
+
+/*******************************/
+
+#main2 > #main2-content > .product-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#main2-content > .product-list > .product{
+    width: 330px;
+    margin: 30px 0px;
+}     /* 한 줄에 상품 4개씩만 들어가게 하는 거... 이걸 못 했다.*/
+
+#main2-content > .product-list > .product > li > img .img2{
+    width: 100%;
+} 
+
