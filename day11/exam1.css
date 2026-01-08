@@ -1,0 +1,47 @@
+.basicTable {
+    width: 500px;
+    border: 1px solid black;
+}
+
+.basicTable th,
+.basicTable td {
+    /* 꾸밀 때 td , th 또 별도로 스타일링해야 됨 */
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.basicTable td:nth-child(1) {/* 형제 선택자 ( 첫 번째 열만 ) */ background-color: aqua;}
+
+.basicTable td:nth-child(2) {text-align: center; background-color: mediumturquoise;}
+
+.basicTable td:nth-child(3) {background-color: mediumaquamarine;}
+
+.basicTable td:nth-child(4) {background-color: mediumspringgreen;}
+
+.basicTable td:nth-child(5) {background-color: lightskyblue;}
+/* 속성 선택자 : 선택자[속성명] */
+.basicTable td[colspan]{
+    text-align: right;
+}
+
+.styleTable{
+    width: 700px;
+    border-collapse: collapse; /* 이중 테두리를 하나의 테두리로 병합 */
+}
+
+.styleTable th ,
+.styleTable td{
+    border: 1px solid black;
+}
+
+.styleTable > tbody > tr:nth-of-type( odd ){
+    background-color: #eeeeee
+}
+
+.styleTable > tbody > tr:hover{
+    background-color:gray; color:  white;
+}
+
+.styleTable > thead > tr{
+    background-color: paleturquoise;
+}
