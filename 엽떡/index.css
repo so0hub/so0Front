@@ -1,17 +1,75 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+/* ============================================================
+   1. Common Styles (공통 스타일)
+   ============================================================ */
+* { 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
 }
 
-li {
-    list-style-type: none;
+li { list-style-type: none; }
+a { text-decoration: none; color: black; }
+
+.fontred { color: #de1d24; }
+.fontblack { color: #232323; }
+
+
+
+/* 헤더 */
+#search_header{ /* 헤더 전체 */
+    width: 100%; background-color: white;
+    min-width: 1280px;
+    border-top: solid 2px #de1d24; border-bottom: solid 2px #dddddd;
+    display: flex; position: sticky; top: 0px;
+    z-index: 9999;
+}
+#search_header_inner{ /* 헤더 안쪽 */
+    width: 1280px; margin: 0 auto; position: relative;
+    display: flex; justify-content: space-between;
+}
+#search_header_inner > a > img{ /* 로고 */
+    width: 150px; margin: 20px;
+}
+#search_header_inner > .h_right{ /* 헤더 오른쪽 부분 */
+    display: block;
+}
+#search_header_inner > .h_right > .h_right_top{ /* 헤더 top */
+    display: flex; justify-content: right;
+    margin: 15px 0; align-items: center;
+}
+#search_header_inner > .h_right > .h_right_top >.h_sns{ /* sns 묶음 */
+    display: flex; margin-top: 5px; margin-right: 20px;
+}
+.h_sns > li > a > img{ /* sns 사진 */
+    width: 25px; margin-left: 10px;
+}
+#search_header_inner > .h_right > .h_right_top > span{ /* 중간 선 */
+    background-color: #c9c9c9;
+    width: 1px; height: 10px; margin-left: 20px;
+}
+#search_header_inner > .h_right > .h_right_top > .h_top_text{ /* login signup */
+    padding: 2px; margin-left: 20px;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+#search_header_inner > .h_right > .h_bottom{ /* 메뉴 창 */
+    display: block; align-items: end; z-index: 999;
 }
+#search_header_inner > .h_right > .h_bottom > .h_bottom_main{ /* 메뉴 창 본문 */
+    position: relative; margin-top: 30px; font-size: 15px; font-weight: bold;
+    display: flex; justify-content: space-around;
+    width: 1000px;
+    
+}
+#search_header_inner > .h_right > .h_bottom > .h_bottom_sub{ /* 메뉴 창 서브 */
+    position: absolute; left: -1px; padding: 10px; 
+    display: none; justify-content: space-evenly; text-align: center; line-height: 220%;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+}
+#search_header_inner > .h_right > .h_bottom > table{ justify-content: right;}
+.h_bottom_subli{ display:  block;}
+#search_header_inner > .h_right > .h_bottom:hover .h_bottom_sub{ display: flex;}
 
 
 
@@ -25,122 +83,16 @@ body {
     text-align: left;
 }
 
-
-/* header ============================================*/
-#headerzone {
-    max-width: 100%;
-    margin: 0 auto;
+#topline {
+    border-top: 3px solid #de1d24;
+    border-bottom: 1px solid rgb(221, 221, 221);
     height: 120px;
-    background-color: white;
-    position: relative;
-
-}
-
-#header {
-    max-width: 1280px;
-    margin: 0 auto;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    font-weight: 400;
-    align-items: center;
-}
-
-.header_left {
-    width: auto; height: 76px;
-    text-align: left;
-
-
-}
-
-.header_left>a>img {
-    width: 20%;
-    margin-top: 20px;
-}
-
-.header_right>.header_top {
-    display: flex;
-    align-items: center;
-    right: 0;
-    top: 17px;
-
-}
-
-.header_top {
-
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 10px;
     width: 100%;
-}
-
-.header_top>a>img {
-    height: 24px;
-    width: 24px;
-}
-
-.header_right>.header_top>a {
-    margin-right: 5px;
-    height: 24px;
-    width: 24px;
-}
-
-.header_right{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    flex: 1;
-
-}
-.header_right>.header_top>.login_join {
-    padding: 0 10px;
-    margin: 0 5px;
-    font-size: 15px;
-
+    position: fixed;
+    margin: 0 0px;
 }
 
 
-
-
-
-.header_right>.header_top>a {
-    margin-right: 10px;
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
-}
-
-
-.header_right>.header_top> .login_join {
-    padding: 0 10px;
-    margin: 0 5px;
-    padding-left: 60px;
-    margin-bottom: 10px;
-    align-items: center;
-    display: flex;
-    font-size: 15px;
-    width: auto;
-
-
-
-}
-
-.header_bottom {
-    display: flex;
-    width: 100%;
-    padding-left: 15px;
-    font-size: 18px;
-    justify-content: center;
-    
-}
-
-.header_right > .header_bottom > li{
-    margin-right: 60px;
-    font-weight: bold;
-}
-
-
-/***********************************************/
 
 .bannerimg{ width: 100%;
 align-items: center;}
