@@ -55,7 +55,8 @@ body {
 }
 
 .header_left {
-    width: auto; height: 76px;
+    width: auto;
+    height: 76px;
     text-align: left;
 
 
@@ -93,13 +94,14 @@ body {
     width: 24px;
 }
 
-.header_right{
+.header_right {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     flex: 1;
 
 }
+
 .header_right>.header_top>.login_join {
     padding: 0 10px;
     margin: 0 5px;
@@ -119,7 +121,7 @@ body {
 }
 
 
-.header_right>.header_top> .login_join {
+.header_right>.header_top>.login_join {
     padding: 0 10px;
     margin: 0 5px;
     padding-left: 60px;
@@ -139,10 +141,10 @@ body {
     padding-left: 15px;
     font-size: 18px;
     justify-content: center;
-    
+
 }
 
-.header_right > .header_bottom > li{
+.header_right>.header_bottom>li {
     margin-right: 60px;
     font-weight: bold;
 }
@@ -150,57 +152,62 @@ body {
 
 /***********************************************/
 
-.bannerimg{ width: 100%;
-align-items: center;}
+.bannerimg {
+    width: 100%;
+    align-items: center;
+}
 
-#mainmenuzone{
+#mainmenuzone {
     max-width: 1920px;
     margin: 0 auto;
 }
-#mainmenu{
+
+#mainmenu {
     max-width: 1200px;
     margin: 0 auto;
     padding: 96px 0px 66px 0px;
 }
 
-.mainmenu_header > .mainmenu_title{
+.mainmenu_header>.mainmenu_title {
     font-size: 38px;
     font-weight: 700;
     margin-top: 70px;
 }
 
-.mainmenu_menu{
+.mainmenu_menu {
     display: flex;
     justify-content: flex-end;
 }
 
-.mainmenu_menu > li{
+.mainmenu_menu>li {
     display: flex;
     flex-direction: row;
     margin-right: 12px;
 }
 
-.menulist{
+.menulist {
     display: flex;
     justify-content: space-between;
 }
 
-.menulist > .menubox { padding: 30px;
+.menulist>.menubox {
+    padding: 30px;
 }
 
-.menulist > .menubox > .menu_name{
+.menulist>.menubox>.menu_name {
     text-align: center;
     font-weight: bold;
     font-size: 23px;
     position: relative;
 }
 
-.menulist > .menubox > .menu_img{
-    width: 245px; height: 250px;
+.menulist>.menubox>.menu_img {
+    width: 245px;
+    height: 250px;
     position: relative;
 }
 
-#boxback{
+#boxback {
     background-image: url(/day12/엽떡img/백그라운드.png);
     background-size: 1650px;
     background-repeat: no-repeat;
@@ -209,25 +216,26 @@ align-items: center;}
     background-color: #eeeeee;
 }
 
-#boxzone > .box1{
+#boxzone>.box1 {
     display: flex;
-    
-    
+
+
 }
 
-#boxzone{
+#boxzone {
     max-width: 1200px;
     margin: 0 auto;
     padding: 96px 0px;
 }
-#boxzone > .box1 > .box1_right > img{
+
+#boxzone>.box1>.box1_right>img {
     width: 100%;
     height: 330px;
     border-radius: 30px;
 }
 
 
-.box1_left{
+.box1_left {
     background-color: #ffffff;
     padding: 40px 50px;
     border-radius: 30px;
@@ -235,118 +243,135 @@ align-items: center;}
     width: 45%;
 }
 
-.box1_left > .notice_header > .noticetitle{
+.box1_left>.notice_header>.noticetitle {
     font-size: 38px;
     font-weight: 700;
 }
 
-.box1_left > .img{
+.box1_left>.img {
     width: 28px;
     position: absolute;
     right: 70px;
     top: 54px;
 }
-.notice_header{
+
+.notice_header {
     display: flex;
     justify-content: space-between;
 }
 
-.boxleft > .noticeli{
+.boxleft>.noticeli {
     font-size: 16px;
 }
 
-.box1_left ul li{
+.box1_left ul li {
     position: relative;
 }
-.box1_left ul li span{
+
+.box1_left ul li span {
     font-size: 13px;
     right: 50px;
     position: absolute;
 }
 
-.box1 > .box1_right{
+.box1>.box1_right {
     padding-left: 20px;
 }
 
 
 
-.box2title{
+.box2title {
     font-size: 38px;
     font-weight: 700;
 }
-#boxzone > .box2 > .viewmore{ color: gray;
+
+#boxzone>.box2>.viewmore {
+    color: gray;
 }
 
-.box2{display: flex;
-flex-direction: row;
-justify-content: space-between;
-padding-top: 60px;
-padding-bottom: 60px;
+.box2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.box3{
+.box3 {
     width: 100%;
     padding: 15px 15px 0px 15px;
     display: flex;
-    
-}
-
-.box3 > .box3_event{
-background-color: #ffffff;
-border-radius: 20px;
-box-shadow: 2px 2px 21px rgba(0, 0, 0, 0.07);
-position: relative;
-flex: 1;
-margin-right: 30px;
-
 
 }
 
-.box3 > .box3_event > img{
+.box3>.box3_event {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 21px rgba(0, 0, 0, 0.07);
+    position: relative;
+    flex: 1;
+    margin-right: 30px;
+
+
+}
+
+.box3>.box3_event>img {
     width: 100%;
     border-radius: 20px;
 }
 
-.box3_event > .ing{font-size: 12px; color: #de1d24; padding: 15px 20px 10px 20px;}
-.box3_event > .event_title{
-    font-size: 18px; font-weight: 600;
+.box3_event>.ing {
+    font-size: 12px;
+    color: #de1d24;
+    padding: 15px 20px 10px 20px;
+}
+
+.box3_event>.event_title {
+    font-size: 18px;
+    font-weight: 600;
     padding: 0 20px;
     height: 43px;
 }
 
-.box3_event > .event_time{
+.box3_event>.event_time {
     font-size: 13px;
     padding: 10px 20px 30px 20px;
 }
 
 
 /**************************************/
-#bottomzone{
+#bottomzone {
     max-width: 1920px;
     margin: 0 auto;
     padding-top: 100px;
 }
 
-#bottom_content{
+#bottom_content {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    justify-content : center;
+    justify-content: center;
 }
 
-.content_center{
+.content_center {
     width: 100%;
 }
-.content_center > img{width: 100%; height: 460px;  border-radius: 30px;}
+
+.content_center>img {
+    width: 100%;
+    height: 460px;
+    border-radius: 30px;
+}
 
 
-.content_right{
+.content_right {
     display: flex;
     flex-direction: column;
     width: 30%;
     margin-left: 30px;
 }
-.content_right > img{
+
+.content_right>img {
     width: 100%;
     border-radius: 30px;
     padding: 15px;
@@ -354,7 +379,7 @@ margin-right: 30px;
 
 
 
-.content_left > .content_title{
+.content_left>.content_title {
     font-size: 38px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -362,7 +387,7 @@ margin-right: 30px;
 
 
 
-.content_left{
+.content_left {
     border: 1px solid white;
     background-color: #ffffff;
     border-radius: 30px;
@@ -371,18 +396,18 @@ margin-right: 30px;
     padding: 15px 15px 0px 15px;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 
 
 /*******************/
 
-.floating_menu{
+.floating_menu {
     max-width: 170px;
     max-height: 150px;
     border-radius: 14px;
-    box-shadow: 5px 5px 10px rgba(109,61,24,0.2);
+    box-shadow: 5px 5px 10px rgba(109, 61, 24, 0.2);
     border: 2px solid #9D693C;
     position: fixed;
     bottom: 150px;
@@ -392,7 +417,6 @@ margin-right: 30px;
     background-color: #fff;
 }
 
-.floating_menu > a img{
+.floating_menu>a img {
     width: 100%
 }
-
