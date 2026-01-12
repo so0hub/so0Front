@@ -1,0 +1,395 @@
+/* ============ 1. 공통 CSS ============ */
+*{ padding: 0px; margin: 0px; box-sizing: border-box; } 
+a{ text-decoration: none; color: black; } 
+li{ list-style-type: none;}
+
+
+#header{
+    width: 100%;
+    align-items: center;
+    border: 1px solid #f1f1f1;
+}
+.wrap_header{
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+/* 헤더 */
+#search_header{ /* 헤더 전체 */
+    width: 100%; background-color: white;
+    min-width: 1280px;
+    border-top: solid 2px #de1d24; border-bottom: solid 2px #dddddd;
+    display: flex; position: sticky; top: 0px;
+    z-index: 9999;
+}
+#search_header_inner{ /* 헤더 안쪽 */
+    width: 1280px; margin: 0 auto; position: relative;
+    display: flex; justify-content: space-between;
+}
+#search_header_inner > a > img{ /* 로고 */
+    width: 150px; margin: 20px;
+}
+#search_header_inner > .h_right{ /* 헤더 오른쪽 부분 */
+    display: block;
+}
+#search_header_inner > .h_right > .h_right_top{ /* 헤더 top */
+    display: flex; justify-content: right;
+    margin: 15px 0; align-items: center;
+}
+#search_header_inner > .h_right > .h_right_top >.h_sns{ /* sns 묶음 */
+    display: flex; margin-top: 5px; margin-right: 20px;
+}
+.h_sns > li > a > img{ /* sns 사진 */
+    width: 25px; margin-left: 10px;
+}
+#search_header_inner > .h_right > .h_right_top > span{ /* 중간 선 */
+    background-color: #c9c9c9;
+    width: 1px; height: 10px; margin-left: 20px;
+}
+#search_header_inner > .h_right > .h_right_top > .h_top_text{ /* login signup */
+    padding: 2px; margin-left: 20px;
+}
+
+#search_header_inner > .h_right > .h_bottom{ /* 메뉴 창 */
+    display: block; align-items: end; z-index: 999;
+}
+#search_header_inner > .h_right > .h_bottom > .h_bottom_main{ /* 메뉴 창 본문 */
+    position: relative; margin-top: 30px; font-size: 15px; font-weight: bold;
+    display: flex; justify-content: space-around;
+    width: 1000px;
+    
+}
+#search_header_inner > .h_right > .h_bottom > .h_bottom_sub{ /* 메뉴 창 서브 */
+    position: absolute; left: -1px; padding: 10px; 
+    display: none; justify-content: right; text-align: center; line-height: 220%;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+}
+#search_header_inner > .h_right > .h_bottom > table{ justify-content: right;}
+.h_bottom_subli{ display:  block; padding-left: 53px; padding-right: 10px;}
+#search_header_inner > .h_right > .h_bottom:hover .h_bottom_sub{ display: flex;}
+
+/*------------------------ 탑텍스트 -----------------------
+
+*/
+
+.top_text{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 0 auto;
+}
+.top_text>.text_1{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 80px 0px 40px;
+}
+.top_text>.text_2{
+    font-size: 16px;
+    padding: 100px 0px 0px;
+}
+#HOME{
+    color: grey;
+}
+
+/*-------------------메인 박스 1-----------*/
+
+#main_box1{
+   padding: 0px 0px 70px;
+   
+}
+#main_box1>.content1{
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 50px 50px 60px;
+    position: relative;
+}
+
+#main_box1>.content1>.c1_img{
+
+}
+#main_box1>.content1>.c1_img>img{
+    width: 520px;
+    border-radius: 30px;
+    padding: 0px 15px;
+}
+#main_box1>.content1>.c1_text{
+    padding: 0px 15px 0px 40px;
+}
+#main_box1>.content1>.c1_text>.c1_text_1{
+    font-size: 24px;
+    color: #DE1D24;
+}
+#main_box1>.content1>.c1_text>.c1_text_2{
+    font-size: 32px;
+}
+#main_box1>.content1>.c1_text{
+    position: relative;
+}
+
+#main_box1>.content1>.c1_text>.c1_text_btn>a{
+   background-color: #232323;
+    width: 150px;
+    text-align: center;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 46px;
+    border-radius: 23px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+}
+
+.content1>.c_point{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.content1>.c_point>.c_point_dot{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #D9D9D9;
+    margin: 0px 4px;
+    border-radius: 100px;
+}
+.content1 > .c_point > .c_point_dot.red {
+    background-color: red;
+    width: 35px; height: 12px;
+}
+
+/*-------------------메인 박스 2-----------*/
+#main{
+   background-color: #f6f6f6;
+   padding: 80px 0px;
+}
+.main_1{
+    display: flex;
+    justify-content: center;
+    width: 1100px;
+    margin: 0 auto;
+
+}
+.main_1>li>a{
+    color: #878787;
+    margin: 0px 20px;
+    padding: 0px 0px 5px;
+    font-size: 26px
+}
+#main_span1{
+    font-weight: bold;
+    color: #232323;
+    
+}
+
+.main_2{
+    display: flex;
+    justify-content: center;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 45px 0px 0px 0px;
+}
+.main_2>.select_box{
+    display: flex;
+    justify-content: space-between;
+    width: 520px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+.main_2>.binbox{
+     width: 520px;
+}
+.select_box>select{
+    border: none;
+    width: 100px;
+    font-size: 16px;
+}
+.select_box>button>img{
+    width: 18px;
+    margin-right: 20px;
+}
+.input-box>input{
+    border: none;
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+}
+button{
+    background-color: white;
+    border: none;
+}
+
+/* ---------------------메인3----------------------*/
+.main3{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+    justify-content: center;
+    margin: auto;
+    padding: 32px 0px 0px;
+}
+.m_box1 {
+    display: flex;
+    width: 550px; 
+    margin: 20px auto;
+   
+}
+
+.left_box {
+    width: 255px; /* 왼쪽 이미지 박스 255px */
+    background-color: #fff;
+    border-radius: 30px 0px 0px 30px;
+    
+    
+}
+
+.left_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.right_box {
+    width: 255px; /* 오른쪽 텍스트 박스 255px */
+    padding: 0px 35px; /* 내부 여백 */
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 0px 30px 30px 0px
+}
+.right_box .f3 {
+    color: #e2001a;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.right_box .f1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #232323;
+    padding: 50px 0px 0px;
+}
+.right_box .f2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #232323;
+    padding: 10px 0px 0px;
+}
+.right_box > a {
+    position: absolute;
+    bottom: 30px;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.main4{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0px 0px;
+}
+.main4>.btn{
+    background-color: #eeeeee;
+    width: 450px; 
+    margin: 0 auto;
+    padding: 1px 6px;
+}
+.main4>.btn>a{
+    font-size: 18px;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 40px 0px 60px;
+    background-color: white;
+    border-top: 1px solid black;
+    color: #878787;
+}
+
+/* 5-1. Footer Logo */
+.footlogo {
+    padding-top: 20px;
+    width: 200px;
+}
+
+.footlogo > img { width: 100%; height: auto; object-fit: contain; }
+
+/* 5-2. Footer Info & Links */
+.footinfo {
+    width: auto;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.footlink {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.footlink > a {
+    margin-right: 60px;
+    color: #878787;
+    text-align: left;
+}
+
+.footinfo > .footlink { font-size: 17px; }
+.footcontent { padding-top: 30px; }
+
+/* 5-3. Award Emblems Area */
+.emblemarea {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 650px;
+}
+
+.footemblembox {
+    display: flex;
+    align-items: center;
+    width: 230px;
+    height: 40%;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #f6f6f6;
+}
+
+.yupemblem {
+    width: 55px;
+    margin-right: 10px;
+}
+
+.yupemblem > img { width: 100%; height: 100%; object-fit: contain; }
+
+.emblemtext { display: flex; flex-direction: column; }
+.emblemyear { font-size: 11px; }
+.emblemtitle { font-size: 13px; }
+
+
+
+
