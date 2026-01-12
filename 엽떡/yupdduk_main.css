@@ -198,23 +198,25 @@ body {
 .notice_header {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 
-.boxleft>.noticeli {
-    font-size: 16px;
+.box1_left > .noticeli{
+  font-size: 16px;
 }
 
-.box1_left ul li {
+.box1_left ul li{
     position: relative;
+    padding-right: 100px;
 }
-
-.box1_left ul li span {
+.box1_left ul li span{
     font-size: 13px;
-    right: 50px;
+    right: 5px;
     position: absolute;
 }
 
-.box1>.box1_right {
+
+.box1 > .box1_right{
     padding-left: 20px;
 }
 
@@ -393,6 +395,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     padding-top: 10px;
+    
 }
 
 .footlink > a {

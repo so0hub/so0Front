@@ -196,9 +196,7 @@ align-items: center;}
     padding-bottom: 20px;
 }
 
-.box1_left > .noticeli{
-    font-size: 16px;
-}
+
 
 .box1_left ul li{
     position: relative;
@@ -343,3 +341,66 @@ margin-right: 30px;
     width: 100%
 }
 
+
+
+/*=============푸터==============*/
+/* 5-1. Footer Logo */
+.footlogo {
+    padding-top: 20px;
+    width: 200px;
+}
+
+.footlogo > img { width: 100%; height: auto; object-fit: contain; }
+
+/* 5-2. Footer Info & Links */
+.footinfo {
+    width: auto;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.footlink {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.footlink > a {
+    margin-right: 60px;
+    color: #878787;
+    text-align: left;
+}
+
+.footinfo > .footlink { font-size: 17px; }
+.footcontent { padding-top: 30px; }
+
+/* 5-3. Award Emblems Area */
+.emblemarea {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 650px;
+}
+
+.footemblembox {
+    display: flex;
+    align-items: center;
+    width: 230px;
+    height: 40%;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #f6f6f6;
+}
+
+.yupemblem {
+    width: 55px;
+    margin-right: 10px;
+}
+
+.yupemblem > img { width: 100%; height: 100%; object-fit: contain; }
+
+.emblemtext { display: flex; flex-direction: column; }
+.emblemyear { font-size: 11px; }
+.emblemtitle { font-size: 13px; }
