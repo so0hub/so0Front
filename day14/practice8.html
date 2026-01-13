@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <style>
+        .basicTable {
+            border: 1px solid black;
+        }
+
+        .basicTable th,
+        .basicTable td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap">
+        <h1 id="title">미니 가계부</h1>
+
+        <div>
+            <h3>등록 영역</h3>
+            <div> 날짜선택: <input id="날짜입력" type="date" /></div>
+            <br />
+            <div>항목입력: <input id="항목입력" /></div>
+            <br />
+            <div>금액입력: <input id="금액입력"  /></div>
+            </br>
+            <button onclick="등록함수()">등록버튼</button>
+
+        </div>
+
+        <div>
+            <h3 id="subTitle2">목록 영역</h3>
+            <table class="basicTable"> <!--전체 표 감쌈-->
+                <thead>
+                    <tr> <!--테이블 행-->
+                        <th>날짜</th>
+                        <th>항목</th>
+                        <th>금액</th>
+                    </tr>
+                </thead>
+
+                <tbody class="테이블본문">
+                    <tr>
+                        <td>2025-06-19</td>
+                        <td>점심 식사</td>
+                        <td>9000</td>
+                    </tr>
+
+                    <tr>
+                        <td>2025-06-19</td>
+                        <td>교통비</td>
+                        <td>1500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="practice8.js"></script>
+</body>
+
+</html>
