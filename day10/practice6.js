@@ -128,15 +128,15 @@ const result={}; // 결과가 담길 빈 객체를 일단 생성.
 
 for(let i = 0 ; i < team.length ; i++){
 //1.현재 순서의 팀원 정보 가져오기.
-const member = team[i];
-const dpt = member.department;
-const name = member.name;
+let member = team[i];
+let dpt = member.department;
+let name = member.name;
 
-if(result[dpt]===undefined){
-
+if(result[dpt]===undefined){ // 만약 객체 안에 개발팀이라는 방이 없다면?
+    result[dpt] = []; // 빈 리스트 방을 새로 만들어준다.
 }
-
-result[dpt].push(name);
+}
+console.log(result);
 
 
 

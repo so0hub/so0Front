@@ -1,0 +1,62 @@
+#wrap{
+    width: 960px; /* 가로사이즈 */
+    margin: 0 auto; /* 구역 가로 가운데 */
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #eeeeee; 
+    padding: 50px; /* 안쪽 여백 */
+}
+
+#top{
+    display: flex;
+    justify-content: space-around; /* 하위 요소들 가로 배차 */
+    align-items: center; /* 하위 요소들 세로 배치 */
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 30px; padding: 20px 0px;
+}
+
+#top > input , #top > select { /* 선택자A , 선택자B 중복 선택 쉼표 */
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+}
+
+#top > button{
+    background-color: blue;
+    color: white;
+    border: none; border-radius: 5px;
+    padding: 10px 20px;
+
+
+}
+/*=========메인/테이블 영역===========*/
+
+#main{
+    border: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 30px; padding: 30px 0px;
+
+}
+
+.basicTable{width: 100%;}
+
+.basicTable > thead{
+    background-color: #eeeeee;
+    height: 50px;
+}
+
+.basicTable > tbody td{ /* tbody 안의 모든 글자와 이미지를 가운데로 하는 것 ... 몰랐음메 */
+    text-align: center;
+    padding: 5px;
+}
+
+.basicTable > tbody td > img , button{
+    border-radius: 5px;
+    border: 1px solid #eeeeee;}
+
+.basicTable > tbody td > .Btn1{
+    background-color: red;
+}
+
+.basicTable > tbody td > .Btn2{
+    background-color: blue;
+}
