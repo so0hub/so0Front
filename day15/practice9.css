@@ -1,7 +1,7 @@
 /***************************전체************************/
 #wrap{
     width: 1400px;
-    height: 960px;
+    height: 1000px;
     margin: 0 auto;
     background-color: #f1f5f9;
     padding: 50px;
@@ -18,7 +18,7 @@ justify-content: space-between;
 
 #left{
     width: 310px;
-    height: 875px;
+    height: 850px;
     border: 1px solid #eeeeee;
     background-color: white;
     border-radius: 10px;
@@ -115,7 +115,7 @@ justify-content: space-between;
 /***************************center************************/
 #center{
     width: 600px;
-    height: 875px;
+    height: 850px;
     border: 1px solid #eeeeee;
     background-color: white;
     border-radius: 10px;
@@ -190,6 +190,7 @@ justify-content: space-between;
 
 #center_bottom > .staffTable thead th{
     text-align: center;
+    padding: 10px;
 }
 
 #center_bottom > .staffTable td img , button{
@@ -205,6 +206,8 @@ td button{
 td .update{ color:blue;}
 td .delete{ color: red;}
 
+
+
 #center_bottom tbody td{
     text-align: center;
 }
@@ -216,7 +219,7 @@ td .delete{ color: red;}
 /***************************right************************/
 #right{
     width: 290px;
-    height: 875px;
+    height: 850px;
     border: 1px solid #eeeeee;
     background-color: white;
     border-radius: 10px;
