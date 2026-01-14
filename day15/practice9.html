@@ -18,40 +18,57 @@
 
 
     <div id="left">
+        <div class="inputline">
         <h3 id="left_title">부서관리</h3>
         <input class="department" placeholder="신규 부서명 입력">
         <button>추가</button>
-        
+        </div>
         <table>
             <thead>
             <tr>
-                <th>부서명</th>
-                <th>관리</th>
+                <th>
+                    <div class="th-content">
+                    <span>부서명</span>
+                    <span class="span2">관리</span>
+                    </div>
+                </th>
             </tr>
             </thead>
 
             <tbody>
                 <tr>
-                    <td>개발팀</td>
                     <td>
+                    <div class="dpt">
+                    <span>개발팀</span>
+                        <div class="dptbtn">
                         <button class="update">수정</button>
                         <button class="delete">삭제</button>
+                        </div>
+                    </div>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>디자인팀</td>
                     <td>
+                    <div class="dpt">
+                    <span>디자인팀</span>
+                    <div class="dptbtn">
                         <button class="update">수정</button>
                         <button class="delete">삭제</button>
+                        </div>
+                    </div>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>기획팀</td>
                     <td>
+                    <div class="dpt">
+                    <span>기획팀</span>
+                    <div class="dptbtn">
                         <button class="update">수정</button>
                         <button class="delete">삭제</button>
+                        </div>
+                    </div>
                     </td>
                 </tr>
             </tbody>
@@ -146,7 +163,7 @@
                     </tr>
 
                      <tr>
-                        <td><img src="https://dimg.donga.com/wps/SPORTS/IMAGE/2021/09/07/109129807.1.jpg/"></td>
+                        <td><img src="https://dimg.donga.com/wps/SPORTS/IMAGE/2021/09/07/109129807.1.jpg"></td>
                         <td>유재석</td>
                         <td>개발팀</td>
                         <td>대리</td>
@@ -182,7 +199,7 @@
                 <h4>휴가 시작일</h4>
                 <h4>휴가 종료일</h4>
                 </div>
-                <div class="right_top_line3">  
+                <div class="right_topline3">  
                 <input class="startdate" type="date"/>
                 <input class="enddate" type="date"/>
                 </div>
@@ -199,7 +216,7 @@
 
              <div id="right_bottom">
                 <h3 id="right_bottom_title">휴가 신청 전체 목록</h3>
-                <div id="box1">
+                <div id="box">
                     <div class="line1">
                         <div>김민준</div><button>신청취소</button>
                     </div>
@@ -211,7 +228,7 @@
                     </div>
                 </div>
 
-                <div id="box2">
+                <div id="box">
                     <div class="line1">
                         <div>이서연</div><button>신청취소</button>
                     </div>
