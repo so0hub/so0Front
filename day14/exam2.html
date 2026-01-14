@@ -7,9 +7,10 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="exam2.CSS">
-    </script>
+   
 
     <style>
+        
        
         
    
@@ -22,20 +23,20 @@
 
         <div id="top">
 
-            <select>
+            <select class="category">
                 <option value="disabled">카테고리 선택하세요.</option> <!--disabled:사용못하게하는거-->
                 <option value="1">음료</option>
                 <option value="2">과자</option>
             </select>
-            <input placeholder="제품명">
-            <input placeholder="제품가격">
-            <input type="file" />
-            <button>등록</button>
+            <input class="name" placeholder="제품명">
+            <input class="price" placeholder="제품가격">
+            <input class="image" type="file" />
+            <button onclick="productAdd()">등록</button>
 
         </div>
 
         <div id="main">
-            <table class="basicTable">
+            <table>
                 <thead>
                     <tr>
                         <th>이미지</th>
@@ -64,18 +65,9 @@
                         <td>1,000</td>
                         <td>2026-01-26</td>
 
-                       <td><button class="Btn1">삭제</button><button class="Btn2">수정</button></td>
+                       <td><button class="deleteBtn">삭제</button><button class="updateBtn">수정</button></td>
                     </tr>
 
-                    <tr>
-                        <td><img src="https://placehold.co/100x100" /></td>
-                        <td>3</td>
-                        <td>콜라</td>
-                        <td>1,000</td>
-                        <td>2026-01-26</td>
-
-                        <td><button class="Btn1">삭제</button><button class="Btn2">수정</button></td>
-                    </tr>
 
                 </tbody>
             </table>
