@@ -142,6 +142,7 @@ justify-content: space-between;
     display: flex;
     justify-content: space-between;
     color: gray;
+    align-items: center;
 }
 
 #center_line1 .staffName , .staffLank{
@@ -157,10 +158,12 @@ justify-content: space-between;
     justify-content: space-between;
     align-items: center;
     color: gray;
+
 }
 
 #center_line2 .imgselect{
     width: 290px;
+    height: 100px;
 }
 
 
