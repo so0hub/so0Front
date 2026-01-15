@@ -7,7 +7,6 @@ let memberList = [
     {"no" : 1 , "id" : "qwe" , "pw" : "1234"},
     {"no" : 2 , "id" : "asd" , "pw" : "5678"},
 ];
-
 // [2] 함수 설계
 // 1. 등록함수 : 매개변수 : x , 리턴값 : x , 처리 : 입력받은 값을 객체로 생성하여 배열에 저장 , 
 
@@ -23,6 +22,17 @@ function signup(){
     const signPwDom = document.querySelector(".signPw");
     const pw = signPwDom.value;
 
+
+    /******************** localStorage 활용하여 memberList 호출 ********************** */
+    let memberList = localStorage.getItem("memberList"); // 로컬 저장소 'memberList' 값 가져오기
+    if(memberList == null ){ // memberList가 비어있으면
+        memberList = []; // memberList 새로운 배열 선언
+    }else{
+        memberList = JSON.parse(memberList); // 타입 변환
+    }
+    /******************************************************************************* */
+
+
     // 2. 입력받은 값들을 객체로 구성한다.
     // 만약에 회원목록에서 1개 이상이면 마지막 회원번호에 +1 , 아니면 1
     let no = memberList.length >= 1 ? memberList[memberList.length-1].no + 1 : 1;
@@ -31,6 +41,10 @@ function signup(){
 
     // 3. 구성한 객체를 배열에 저장한다.
     memberList.push(obj); alert("회원가입 성공!");
+
+    /******************localStorage 활용하여 ********************* */
+    localStorage.setItem("memberList",JSON.stringify(memberList));
+    /*************************************************** */
 
 }
 
@@ -44,6 +58,17 @@ function login(){
 
     const loginPwDom = document.querySelector(".loginPw");
     const pw = loginPwDom.value;
+
+
+    /******************** localStorage 활용하여 memberList 호출 ********************** */
+    let memberList = localStorage.getItem("memberList"); // 로컬 저장소 'memberList' 값 가져오기
+    if(memberList == null ){ // memberList가 비어있으면
+        memberList = []; // memberList 새로운 배열 선언
+    }else{
+        memberList = JSON.parse(memberList); // 타입 변환
+    }
+    /******************************************************************************* */
+
 
     // 2. 입력받은 값이 배열(회원목록) 내에 존재하면 로그인 성공,  아니면 실패
     for(let index = 0 ; index <= memberList.length-1 ; index++ ){
